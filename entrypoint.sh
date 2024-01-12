@@ -6,9 +6,9 @@ VMESS_WSPATH='/vmess'
 VLESS_WSPATH='/vless'
 TROJAN_WSPATH='/trojan'
 SS_WSPATH='/shadowsocks'
-NEZHA_SERVER='agt.blackcup.tk'
-NEZHA_PORT='6344'
-NEZHA_KEY='U8rbfPeObflyRYwJui'
+NEZHA_SERVER=''
+NEZHA_PORT=''
+NEZHA_KEY=''
 sed -i "s#UUID#$UUID#g;s#VMESS_WSPATH#${VMESS_WSPATH}#g;s#VLESS_WSPATH#${VLESS_WSPATH}#g;s#TROJAN_WSPATH#${TROJAN_WSPATH}#g;s#SS_WSPATH#${SS_WSPATH}#g" config.json
 sed -i "s#VMESS_WSPATH#${VMESS_WSPATH}#g;s#VLESS_WSPATH#${VLESS_WSPATH}#g;s#TROJAN_WSPATH#${TROJAN_WSPATH}#g;s#SS_WSPATH#${SS_WSPATH}#g" /etc/nginx/nginx.conf
 sed -i "s#RELEASE_RANDOMNESS#${RELEASE_RANDOMNESS}#g" /etc/supervisor/conf.d/supervisord.conf
